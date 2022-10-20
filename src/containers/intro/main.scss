@@ -20,12 +20,17 @@ h4{
     font-weight: 500;
     line-height: 1.2;
 }
-.blanklink{
+.blank{
     padding: 15px;
 }
 .link{
     text-decoration: none;
     color:rgb(255, 98, 0);
+    &:hover{
+        color: rgb(255, 98, 0);
+        text-decoration: none;
+        cursor: pointer;
+        }
 }
 .intro{
     padding-top: 40px;

@@ -10,7 +10,7 @@ export default function footer_login() {
     return <div className='footer_login'>
         <div className='footer_login__line'></div>
         <div className='footer_login__body '>
-            <div style={{'padding-right':'30px', 'paddingTop': '15px'}}>
+            <div style={{'paddingRight':'30px', 'paddingTop': '15px'}}>
                 <div className='footer_login__body__risk'>
                     <div className='footer_login__body__risk__title'>
                         <span><b>RISK WARNING</b></span>
@@ -23,7 +23,7 @@ export default function footer_login() {
                         <span className='footer_login__body--text'>To submit an inquiry, please contact us at <a className='footer_login__body--link'>support@eu.iqoption.com</a>.</span><br/>
                         <span className='footer_login__body--text'>To <b>submit a complaint</b>, please email us at <a className='footer_login__body--link'>complaints@iqoption.com</a>. For more information, please refer to our Complaints Policy.</span>
                 </div>
-                <div style={{'padding-top':'20px'}}>
+                <div style={{'paddingTop':'20px'}}>
                     <span className='footer_login__body--text' style={{'color':'GrayText'}}>
                         You are granted limited non-exclusive non-transferable rights to use the IP provided on this website for
                         personal and non-commercial purposes in relation to the services offered on the Website only.
@@ -39,7 +39,7 @@ export default function footer_login() {
             <div className='footer_login__side'>
                 <a className='cysec'>
                     <div className='cysec__title'>CySEC</div>
-                    <div style={{'font-size': '10px'}}>
+                    <div style={{'fontSize': '10px'}}>
                         <div>
                             <span>Regulated</span>
                         </div>

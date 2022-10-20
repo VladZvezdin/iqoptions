@@ -1,0 +1,39 @@
+.container_register{
+    padding-top: 50px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form_register{
+    padding: 10px 0;
+    &__input, &__select{
+        width: 100%;
+        height: 50px;
+        border: 1px solid rgba(126, 126, 126, 0.415);
+        border-radius: 3px;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 0 20px;
+    }
+    .form-check-input{
+        cursor: pointer;
+        &:checked{
+            background-color: rgb(255, 98, 0);
+            border-color: rgb(255, 98, 0);
+        }
+        &:focus{
+            border-color: rgb(253, 97, 0);
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(255, 85, 0, 0.25);
+        }
+    }
+    &__fields{
+        padding-top: 20px;
+    }
+}
+.annotation{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(58, 58, 58);
+
+}

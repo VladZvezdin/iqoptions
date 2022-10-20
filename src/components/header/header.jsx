@@ -1,19 +1,26 @@
 import React from "react";
-import { useState } from "react";
-import '../../../../assets/css/bootstrap.min.css'
+import { useEffect,useState } from "react";
+import '../../assets/css/bootstrap.min.css'
 import './header.scss'
-import { useEffect } from "react";
 
-export default function Header(){
-
+export default function Header(props){
+  let [link, setLink] = useState('')
+  const[axis,setAxis] = useState('');
   const[navbar, setNavbar] = useState(false);
+  useEffect(()=>{
+    if (props.link === '/') {setAxis(30)}
+    if (props.link === 'login') {setLink('login'); setAxis(0)}
+    if (props.link === 'register'){setLink('register'); setAxis(0);setNavbar(true)}
+    console.log(link);
+  },[])
   const changeNavbar = () =>{
-    if(window.scrollY >= 30){
+    if(window.scrollY >= axis){
       setNavbar(true)
     }else{
       setNavbar(false)
     }
   }
+
 
   window.addEventListener('scroll', changeNavbar)
   
@@ -38,7 +45,7 @@ export default function Header(){
     return <div className={`header ${!navbar ? '' : 'active'} sticky-top`}>
         <div onMouseLeave={handleClose5}>
             <a ><img src="" alt="iqoption"/></a>
-            <a className="brdr"  onMouseEnter={handleOpen}>Trade</a>
+            {link !== 'login' && <a className="brdr"  onMouseEnter={handleOpen}>Trade</a>}
                   {open ? (
               <div className={`menu ${open ? 'menu--open': ''} menu--first`} onMouseLeave={handleClose}>
                 <li className="menu-item">
@@ -52,7 +59,7 @@ export default function Header(){
                 </li>
               </div>
             ) : null}
-            <a className="brdr" onMouseEnter={handleOpen2}>For Traders</a>
+            {link !== 'login' && <a className="brdr" onMouseEnter={handleOpen2}>For Traders</a>}
             {open2 ? (
               <ul className={`menu ${open2 ? 'menu--open': ''}`} onMouseLeave={handleClose2}>
                 <div className="row menu--second">
@@ -106,7 +113,7 @@ export default function Header(){
                 </div>
               </ul>
             ) : null}
-            <a className="brdr" onMouseEnter={handleOpen3}>About Us</a>
+            {link !== 'login' && <a className="brdr" onMouseEnter={handleOpen3}>About Us</a>}
             {open3 ? (
               <ul className={`menu ${open3 ? 'menu--open': ''}`} onMouseLeave={handleClose3}>
                 <div className="row menu--thirt">
@@ -135,7 +142,7 @@ export default function Header(){
                 </div>
               </ul>
             ) : null}
-            <a className="brdr" onMouseEnter={handleOpen4}>Regulation </a>
+            {link !== 'login' && <a className="brdr" onMouseEnter={handleOpen4}>Regulation </a>}
             {open4 ? (
               <ul className={`menu ${open4 ? 'menu--open': ''}`} onMouseLeave={handleClose4}>
                 <div className="row menu--thirt">
@@ -160,8 +167,8 @@ export default function Header(){
         </div>
         <div>
             <a><img src=" " alt=""/> lang</a>
-            <a className={`loginbtn ${!navbar ? '' : 'active'}`} href="/login">Log in</a>
-            <a className="signupbtn">Sign Up</a>
+            {link !== 'login' && <a className={`loginbtn ${!navbar ? '' : 'active'}`} href="/login">Log in</a>}
+            {link !== 'register' && <a className="signupbtn" href="/register">Sign Up</a>}
         </div>
 
     </div>

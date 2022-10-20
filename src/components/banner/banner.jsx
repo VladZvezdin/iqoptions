@@ -1,12 +1,18 @@
 import React from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import './banner.css'
 
 
-export default function Banner (){
+export default function Banner (props){
+  const[axis,setAxis] = useState(4350)
+  useEffect(()=>{
+    if (props.link === 'login') {setAxis(310)}
+    console.log(axis);
+  },[])
     const[banner, setBanner] = useState(false);
   const hideBanner = () =>{
-    if(window.scrollY <= 4350){
+    if(window.scrollY <= axis){
         setBanner(true)
     }else{
         setBanner(false)

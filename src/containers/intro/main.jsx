@@ -1,7 +1,7 @@
 import './main.scss'
-import Header from './components/header/header'
-import Footer from './components/footer/footer'
-import Banner from './components/banner/banner'
+import Header from '../../components/header/header'
+import Footer from '../../components/footer/footer'
+import Banner from '../../components/banner/banner'
 import Swiper_bar from './components/swiper/swiper'
 
 
@@ -30,9 +30,9 @@ import deposits from './assets/deposits.svg'
 
 
 
-export default function Main() {
+export default function Main(props) {
     return <div className='intro_banner'>
-        <Header />
+        <Header link = {props.teg}/>
         <div className="container">
             <div>
                 <div className='intro'>
@@ -241,7 +241,7 @@ export default function Main() {
             </div>
         </div>
         <Swiper_bar />
-        <Banner />
+        <Banner link = {props.teg}/>
         <Footer />
     </div>
 }

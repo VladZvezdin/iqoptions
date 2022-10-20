@@ -1,0 +1,112 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 16px 1px;
+    a{
+        text-decoration: none;
+        padding: 0px 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .brdr{
+        &:hover{
+            padding-bottom: 18px;
+            border-bottom: 2px solid rgb(255, 98, 0);
+        }
+    }
+    .loginbtn{
+        padding: 10px 15px;
+        color: #fff;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 3px;
+        margin: 10px;
+        &:hover{
+            background-color: rgb(255, 98, 0);
+            border-color: rgb(255, 98, 0);
+        }
+    }
+    .signupbtn{
+        padding: 10px 15px;
+        border-radius: 3px;
+        color:#fff !important;
+        background-color: rgb(255, 98, 0);
+        border: 1px solid rgb(255, 98, 0);
+        &:hover{
+            background-color: orangered;
+            border-color: orangered;
+        }
+    }
+}
+
+.loginbtn.active{
+    border-color: rgb(255, 98, 0);
+    color: rgb(255, 98, 0) !important;
+    &:hover{
+        color: #fff !important;
+    }
+}
+.header.active{
+    background-color: #fff;
+    a{
+        color:rgb(59, 59, 59);
+    }
+}
+.show{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.menu {
+    position: absolute;
+    left: 0;
+    list-style-type: none;
+    margin-top: 17px;
+    padding: 25px 0;
+    background-color: #fff;
+    width: 100%;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 16px 1px;
+    opacity: 0;
+    &--first{
+        justify-content: center;
+        padding-left: 150px;
+    }
+    &--second{
+        justify-content: center;
+        padding-left: 220px;
+    }
+    &--thirt{
+        justify-content: center;
+    }
+    &--open{
+        animation: open-menu;
+        animation-duration: .2s;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        opacity: 1;
+    }
+    a{
+        text-decoration: none;
+        color:rgb(85, 85, 85);
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 500;
+        &:hover{
+            color: rgb(255, 98, 0) !important;
+        }
+    }
+  }
+
+@keyframes open-menu{
+    from{
+        height: 0%;
+    }
+    to{
+        height: 150%;
+    }
+}

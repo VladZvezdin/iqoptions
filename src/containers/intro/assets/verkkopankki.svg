@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>verkkopankki</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="deposit-copy" transform="translate(-15941.000000, -196.000000)">
+            <g id="verkkopankki" transform="translate(15942.000000, 197.000000)">
+                <rect id="Rectangle-6-Copy-26" fill="#F6F6F6" x="0" y="0" width="40" height="40" rx="4"></rect>
+                <path d="M4,0.5 C2.06700338,0.5 0.5,2.06700338 0.5,4 L0.5,36 C0.5,37.9329966 2.06700338,39.5 4,39.5 L36,39.5 C37.9329966,39.5 39.5,37.9329966 39.5,36 L39.5,4 C39.5,2.06700338 37.9329966,0.5 36,0.5 L4,0.5 Z M4,-0.5 L36,-0.5 C38.4852814,-0.5 40.5,1.51471863 40.5,4 L40.5,36 C40.5,38.4852814 38.4852814,40.5 36,40.5 L4,40.5 C1.51471863,40.5 -0.5,38.4852814 -0.5,36 L-0.5,4 C-0.5,1.51471863 1.51471863,-0.5 4,-0.5 Z" id="Rectangle-6-Copy-26" fill="#D0D5DF" fill-rule="nonzero"></path>
+                <rect id="Rectangle-9" fill="#2B498F" x="7.3996582" y="0.582519531" width="11.25" height="38.75"></rect>
+                <polygon id="Rectangle-9" fill="#2B498F" transform="translate(20.000000, 20.000000) rotate(90.000000) translate(-20.000000, -20.000000) " points="14.375 0.625 25.625 0.625 25.625 39.375 14.375 39.375"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

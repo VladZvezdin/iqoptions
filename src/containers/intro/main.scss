@@ -1,0 +1,217 @@
+.intro_banner{
+    background-image:url('./assets/dark-blue.png');
+    background-repeat: no-repeat;
+    background-size: 100% 625px;
+}
+
+.container{
+    padding: 0 100px;
+}
+a{
+    text-decoration: none !important;
+    &:hover{
+        color: #fff;
+    }
+}
+h4{
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.blanklink{
+    padding: 15px;
+}
+.link{
+    text-decoration: none;
+    color:rgb(255, 98, 0);
+}
+.intro{
+    padding-top: 40px;
+    max-width: 450px;
+    &__btngr{
+        padding-top: 30px;
+    }
+    &__text{
+      font-size: 40px; 
+      color: #fff;
+      font-weight: 700;
+      &__bold{
+        font-weight: bold !important;
+      } 
+      &__side{
+        font-size: 13px;
+        color: rgb(154, 154, 154);
+      }
+    }
+    &__img{
+        position: absolute;
+        top: 15px;
+        left: 620px;
+    }
+}
+.btntry{
+    padding: 15px 15px;
+    color: #fff;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    &:hover{
+        background-color: rgb(255, 255, 255);
+        color: rgb(59, 59, 59);
+    }
+}
+.title{
+    font-size: 40px;
+    font-weight: 400;
+    color: rgb(75, 2, 222);
+    padding-bottom: 20px;
+    &--sub{
+        font-size: 30px;
+    }
+}
+.btnfree{
+    padding: 15px 50px;
+    color: #fff;
+    background-color: rgb(255, 98, 0);
+    border: 1px solid rgb(255, 98, 0);
+    border-radius: 3px;
+    margin-right: 10px;
+    &:hover{
+        background-color: orangered;
+        border-color: orangered;
+    }
+    &--withdrawal{
+        padding: 15px 15px;
+
+    }
+}
+.btnbinares{
+    font-size: 20px;
+    margin-top: 70px;
+    text-align: center;
+    color: #fff;
+    a{
+        padding: 0px 20px;
+        cursor: pointer;
+        &:hover{
+            color:rgb(190, 190, 190);
+        }
+        &:focus{
+            border-bottom: 2px solid #fff;
+        }
+    }
+}
+.btnapp{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid rgb(255, 98, 0);
+    color: rgb(74, 74, 74);
+    border-radius: 3px;
+    margin-right: 10px;
+    &--smtxt{
+        font-size: 13px;
+    }
+    &:hover{
+        background-color: rgb(255, 98, 0);
+        color: #fff;
+    }
+    img{
+        margin-right: 20px;
+    }
+}
+.panel{
+    margin-top: 20px;
+    height: 750px;
+    border: 1px solid rgb(185, 184, 184);
+    border-radius: 5px;
+    background-color: #fff;
+    &__text{
+        padding-top: 10px;
+        text-align: center;
+        font-size: 12px;
+        color:rgb(111, 111, 111);
+        &--bold{
+            color: black;
+            font-weight: bold;
+        }
+    }
+}
+.withdrawal{
+    margin-top: 50px;
+    background-color: rgb(250, 250, 250);
+    height: 450px;
+    padding-top: 30px;
+    text-align: center;
+    &__text{
+        font-size: 19px;
+    }
+    &__blockcard{
+        display: flex;
+        padding: 50px 0px;
+        justify-content: center;
+        &__card{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            width: 114px;
+            height: 68px;
+        }
+    }
+    &--training{
+        height: 450px;
+    }
+}
+.cardsvg{
+    padding-bottom: 30px ;
+}
+.cardview{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 150px;
+    color: rgb(74, 74, 74);
+    text-align: center;
+    &__card{
+        width: 200px;
+        &--training{
+            width: 300px;  
+        }
+    }
+}
+.enjoybody{
+    max-width: 450px;
+    &__text{
+        color: rgb(74, 74, 74);
+        font-size: 18px;
+    }
+}
+.main-features{
+    
+    margin-top: 80px;
+    padding: 0 130px;
+    &__card{
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+    &__text{
+        color: rgb(74, 74, 74);
+        font-size: 18px;
+    }
+    &__analysis{
+        max-width: 100%;
+        padding-left: 75px;
+    }
+    &__risk{
+        max-width: 100%;
+        padding: 50px 0;
+    }
+}

@@ -26,14 +26,27 @@ import practice from './assets/freepractice.svg'
 import support from './assets/support.svg'
 import register from './assets/register.svg'
 import deposits from './assets/deposits.svg'
+import { useEffect, useState } from 'react'
+import { getCurrencies } from '../../action/intro'
 
 
 
 
 export default function Main(props) {
+    const [forex, setForex] = useState(true);
+    const [stocks, setStocks] = useState(false);
+    const [crypto, setCrypto] = useState(false);
+    const [commodities, setCommodities] = useState(false);
+    const clickOpen1 = () => {setForex(true); setStocks(false);setCrypto(false);setCommodities(false)}
+    const clickOpen2 = () => {setForex(false); setStocks(true);setCrypto(false);setCommodities(false)}
+    const clickOpen3 = () => {setForex(false); setStocks(false);setCrypto(true);setCommodities(false)}
+    const clickOpen4 = () => {setForex(false); setStocks(false);setCrypto(false);setCommodities(true)}
+    useEffect(()=>{
+        getCurrencies();
+    })
     return <div className='intro_banner'>
         <Header link = {props.teg}/>
-        <div className="container">
+        <div className="container intimg">
             <div>
                 <div className='intro'>
                     <h1>
@@ -51,15 +64,15 @@ export default function Main(props) {
                         <a className='btntry'> Free Practice Account</a>
                     </div>
                 </div>
-                <div className='intro__img'>
-                    <img src={notebook} style={{width: '70%'}}/>
+                <div className='intro__im2g'>
+                    {/* <img src={notebook} style={{width: '70%'}}/> */}
                 </div>
         </div>
         <div className='btnbinares'>
-            <a>Forex</a>
-            <a>Stocks</a>
-            <a>Crypto</a>
-            <a>Commodities</a>
+            <a className={`${forex ? 'test': ""}`} onClick={()=>{clickOpen1()}}>Forex</a>
+            <a className={`${stocks ? 'test': ""}`} onClick={()=>{clickOpen2()}}>Stocks</a>
+            <a className={`${crypto ? 'test': ""}`} onClick={()=>{clickOpen3()}}>Crypto</a>
+            <a className={`${commodities ? 'test': ""}`} onClick={()=>{clickOpen4()}}>Commodities</a>
         </div>
         <div className='panel'>
 

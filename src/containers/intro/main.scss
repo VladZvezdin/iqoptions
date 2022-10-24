@@ -1,17 +1,26 @@
 .intro_banner{
     background-image:url('./assets/dark-blue.png');
     background-repeat: no-repeat;
-    background-size: 100% 625px;
+    background-size: 150% 625px;
 }
-
+.test{
+    border-bottom: 2px solid #fff;
+}
 .container{
-    padding: 0 100px;
+    padding: 0 130px;
 }
 a{
     text-decoration: none !important;
     &:hover{
         color: #fff;
     }
+}
+.intimg{
+    background-position-x: 450px;
+    background-size: 450px;
+    background-repeat: no-repeat;
+    // left: 620px;
+    background-image: url(./assets/intro_notebook.webp);
 }
 h4{
     font-size: 16px;
@@ -51,9 +60,12 @@ h4{
       }
     }
     &__img{
-        position: absolute;
-        top: 15px;
-        left: 620px;
+        // position: absolute;
+        // top: 15px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        // left: 620px;
+        background-image: url(./assets/intro_notebook.webp);
     }
 }
 .btntry{

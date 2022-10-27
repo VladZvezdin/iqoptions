@@ -28,22 +28,21 @@ import register from './assets/register.svg'
 import deposits from './assets/deposits.svg'
 import { useEffect, useState } from 'react'
 import { getCurrencies } from '../../action/intro'
+import Currency from './components/currency/currency'
 
 
 
 
 export default function Main(props) {
+    const [choice, setChoice] =useState(1)
     const [forex, setForex] = useState(true);
     const [stocks, setStocks] = useState(false);
     const [crypto, setCrypto] = useState(false);
     const [commodities, setCommodities] = useState(false);
-    const clickOpen1 = () => {setForex(true); setStocks(false);setCrypto(false);setCommodities(false)}
-    const clickOpen2 = () => {setForex(false); setStocks(true);setCrypto(false);setCommodities(false)}
-    const clickOpen3 = () => {setForex(false); setStocks(false);setCrypto(true);setCommodities(false)}
-    const clickOpen4 = () => {setForex(false); setStocks(false);setCrypto(false);setCommodities(true)}
-    useEffect(()=>{
-        getCurrencies();
-    })
+    const clickOpen1 = () => {setForex(true); setStocks(false);setCrypto(false);setCommodities(false); setChoice(1)}
+    const clickOpen2 = () => {setForex(false); setStocks(true);setCrypto(false);setCommodities(false); setChoice(2)}
+    const clickOpen3 = () => {setForex(false); setStocks(false);setCrypto(true);setCommodities(false); setChoice(3)}
+    const clickOpen4 = () => {setForex(false); setStocks(false);setCrypto(false);setCommodities(true); setChoice(4)}
     return <div className='intro_banner'>
         <Header link = {props.teg}/>
         <div className="container intimg">
@@ -75,7 +74,7 @@ export default function Main(props) {
             <a className={`${commodities ? 'test': ""}`} onClick={()=>{clickOpen4()}}>Commodities</a>
         </div>
         <div className='panel'>
-
+            <Currency choice = {choice}/>
         </div>
         <div className='panel__text'>
             <span>

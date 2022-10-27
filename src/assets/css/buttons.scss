@@ -36,5 +36,27 @@
 
         }
     }
+}
 
+.btn_md{
+    width: 48%;
+    padding: 12px 20px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    &--white{
+        color: rgb(74, 74, 74);
+        background-color: white;
+        border: 1px solid rgb(130, 130, 130);
+        &:hover{
+        background-color: rgb(247, 247, 247);
+        }
+    }
+    &--blue{
+        color: #fff;
+        background-color: rgb(58, 85, 156);
+        border: none;
+        &:hover{
+            background: rgb(47, 70, 123);
+        }
+    }
 }

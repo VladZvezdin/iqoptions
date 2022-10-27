@@ -5,9 +5,10 @@ import './banner.css'
 
 
 export default function Banner (props){
-  const[axis,setAxis] = useState(4350)
+  const[axis,setAxis] = useState(4920)
   useEffect(()=>{
     if (props.link === 'login') {setAxis(310)}
+    if (props.link === 'register') {setAxis(390)}
     console.log(axis);
   },[])
     const[banner, setBanner] = useState(false);

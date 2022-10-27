@@ -9,17 +9,16 @@
 .container{
     padding: 0 130px;
 }
-a{
-    text-decoration: none !important;
-    &:hover{
-        color: #fff;
-    }
-}
+// a{
+//     text-decoration: none !important;
+//     &:hover{
+//         color: #fff;
+//     }
+// }
 .intimg{
-    background-position-x: 450px;
+    background-position-x: 650px;
     background-size: 450px;
     background-repeat: no-repeat;
-    // left: 620px;
     background-image: url(./assets/intro_notebook.webp);
 }
 h4{
@@ -146,6 +145,7 @@ h4{
     border: 1px solid rgb(185, 184, 184);
     border-radius: 5px;
     background-color: #fff;
+    overflow: hidden;
     &__text{
         padding-top: 10px;
         text-align: center;

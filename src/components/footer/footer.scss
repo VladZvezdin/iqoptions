@@ -26,13 +26,21 @@
             }
         }
         &--text{
-            color:rgb(0, 0, 0);
+            color:rgb(93, 93, 93);
             font-size: 13px;
+            font-weight: 500;
+            &--small{
+                font-size: 11px;
+            }
         }
         &--link{
             text-decoration: none;
             color:rgb(255, 98, 0);
             font-size: 13px;
+            &:hover{
+                text-decoration:underline !important;
+                color:rgb(255, 98, 0);
+            }
         }
         &__risk{
             max-width: 700px;
@@ -150,4 +158,34 @@
     &:hover{
         color: rgb(74, 74, 74);
     }
+}
+.scroll_btn{
+    display: flex;
+    align-items: center;
+    color:rgb(255, 98, 0);
+    fill:rgb(255, 98, 0) ;
+}
+.mda{
+    color: rgb(255, 98, 0);
+}
+
+.scroll_btn:hover .topscroll {
+    background: #ff5722;
+    color: #fff;
+}
+
+.topscroll{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid #ff5722;
+    color: #ff5722;
+    line-height: 0;
 }
